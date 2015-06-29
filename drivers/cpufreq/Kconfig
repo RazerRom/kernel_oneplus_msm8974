@@ -116,6 +116,16 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactive' governor for latency-sensitive workloads.
 
+config CPU_FREQ_DEFAULT_GOV_RAZER
+	bool "razer"
+	select CPU_FREQ_GOV_RAZER
+    select CPU_FREQ_GOV_PERFORMANCE
+	help
+	  Use the CPUFreq governor 'razer' as default. This allows
+	  you to get a full dynamic cpu frequency capable system by simply
+	  loading your cpufreq low-level hardware driver, using the
+	  'razer' governor for latency-sensitive workloads.
+
 config CPU_FREQ_DEFAULT_GOV_SMARTMAX
         bool "smartmax"
         select CPU_FREQ_GOV_SMARTMAX
@@ -262,6 +272,16 @@ config CPU_FREQ_GOV_CONSERVATIVE
 	  For details, take a look at linux/Documentation/cpu-freq.
 
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_RAZER
+	tristate "'razer' cpufreq policy governor"
+    select CPU_FREQ_TABLE
+	help
+	  'razer' - A tweaked hybrid interactive + ondemand based smart and smooth 
+	   optimized governor designed for optimization in transition, performance 
+	   and power.
+	
+	   If in doubt, say N.
 
 config CPU_FREQ_GOV_SMARTMAX
         tristate "'smartmax' cpufreq policy governor"
