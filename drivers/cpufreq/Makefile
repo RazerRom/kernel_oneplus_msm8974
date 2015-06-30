@@ -10,7 +10,6 @@ obj-$(CONFIG_CPU_FREQ_GOV_USERSPACE)	+= cpufreq_userspace.o
 obj-$(CONFIG_CPU_FREQ_GOV_ONDEMAND)	+= cpufreq_ondemand.o
 obj-$(CONFIG_CPU_FREQ_GOV_CONSERVATIVE)	+= cpufreq_conservative.o
 obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)	+= cpufreq_interactive.o
-obj-$(CONFIG_CPU_FREQ_GOV_RAZER)	+= cpufreq_razer.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMARTMAX)     += cpufreq_smartmax.o
 obj-$(CONFIG_CPU_FREQ_GOV_SLIM)		+= cpufreq_slim.o
 obj-$(CONFIG_CPU_FREQ_GOV_IMPULSE)      += cpufreq_impulse.o

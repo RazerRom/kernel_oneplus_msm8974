@@ -37,10 +37,6 @@
 	 (((_mi) & 0xFF) << 8) | \
 	 ((_pa) & 0xFF))
 
-#ifdef CONFIG_CPU_FREQ_GOV_RAZER
-extern int graphics_boost;
-#endif
-
 #ifdef CONFIG_CPU_FREQ_GOV_SLIM
 extern int graphics_boost;
 #endif
