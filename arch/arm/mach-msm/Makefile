@@ -426,4 +426,4 @@ obj-$(CONFIG_PERFMAP) += perfmap.o
 
 obj-$(CONFIG_MSM_LIMITER) += msm_limiter.o
 obj-$(CONFIG_CHARGE_LEVEL) += charge_level.o
-obj-$(CONFIG_INTELLI_HOTPLUG) += intelli_hotplug.o
+obj-$(CONFIG_INTELLI_PLUG) += intelli_plug.o
